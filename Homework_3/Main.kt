@@ -1,14 +1,45 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+    //Задача 1: Число палиндром. Программа проверяет, является ли число палиндромом.
+    palindrome()
+
+    //Задача 2:Проверка простого числа. Программа проверяет, является ли число простым.
+    primeNumber()
+
+    //Задача 3: Вычисление суммы цифр числа до единичного разряда.
+    singleDigit()
+
+    //Задача 4: Перевёрнутая лесенка.
+    invertedLadder()
+
 }
+
+
+fun palindrome() {
+    println("Программа проверяет, является ли число палиндромом. Введите число:")
+    var numberN: Int? = null
+    while (numberN == null) {
+        println("Введите число:")
+        numberN = readLine()?.toIntOrNull()
+        if (numberN == null) {
+            println("Неверный ввод")
+        }
+    }
+
+
+
+}
+
+fun primeNumber() {
+    println("Простое число. Программа проверяет, является ли число простым. Введите число:")
+}
+
+fun singleDigit() {
+    println("Вычисление суммы цифр числа до единичного разряда. Введите число:")
+}
+
+fun invertedLadder() {
+    println("Перевёрнутая лесенка. Введите высоту лесенки:")
+}
+
+
