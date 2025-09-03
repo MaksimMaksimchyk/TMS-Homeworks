@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea
-TMS-Homeworks.iml
+/TMS-Homeworks.iml
 
 ### Kotlin ###
 .kotlin
