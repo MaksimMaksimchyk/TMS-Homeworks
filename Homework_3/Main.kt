@@ -1,21 +1,23 @@
 fun main() {
 
     //Задача 1: Число палиндром. Программа проверяет, является ли число палиндромом.
-    palindrome()
+    //palindrome()
 
     //Задача 2:Проверка простого числа. Программа проверяет, является ли число простым.
-    primeNumber()
+    //primeNumber()
 
     //Задача 3: Вычисление суммы цифр числа до единичного разряда.
-    singleDigit()
+    //singleDigit()
 
     //Задача 4: Перевёрнутая лесенка.
-    invertedLadder()
+    //invertedLadder()
+
 
 }
 
 
 fun palindrome() {
+
     println("Программа проверяет, является ли число палиндромом. Введите число:")
     var numberN: Int? = null
     while (numberN == null) {
@@ -24,9 +26,8 @@ fun palindrome() {
         if (numberN == null) {
             println("Неверный ввод")
         }
+
     }
-
-
 
 }
 
