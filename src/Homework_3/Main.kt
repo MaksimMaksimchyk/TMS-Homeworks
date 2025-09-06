@@ -1,3 +1,5 @@
+package Homework_3
+
 fun main() {
     //Выбор задачи
     var inputMenu: Int? = null
