@@ -25,16 +25,10 @@ fun main() {
 //Задача 1: Число палиндром. Программа проверяет, является ли число палиндромом.
 fun palindrome() {
 
-    //Ввод числа
     println("Программа проверяет, является ли число палиндромом.")
-    var numberN: Int? = null
-    while (numberN == null) {
-        println("Введите число:")
-        numberN = readLine()?.toIntOrNull()
-        if (numberN == null) {
-            println("Неверный ввод")
-        }
-    }
+    println("Введите число:")
+    val numberN = readln().toInt()
+
 
     // Переворачивание числа
     var reversedNumberN = 0
@@ -55,15 +49,76 @@ fun palindrome() {
 
 //Задача 2:Проверка простого числа. Программа проверяет, является ли число простым.
 fun primeNumber() {
-    println("Простое число. Программа проверяет, является ли число простым. Введите число:")
+
+    println("Простое число. Программа проверяет, является ли число простым.")
+    println("Введите число:")
+    val number = readln().toInt()
+
+
+    var isSimple = true
+    var firstPrimeNumber = 0
+    for (i in 2..number - 1) {
+        if (number % i == 0) {
+            isSimple = false
+            firstPrimeNumber = i
+            break
+        }
+    }
+
+    if (isSimple == true) {
+        println("Это простое число")
+    } else println("Это не простое число, как минимум делится на $firstPrimeNumber")
+
 }
 
 //Задача 3: Вычисление суммы цифр числа до единичного разряда.
 fun singleDigit() {
-    println("Вычисление суммы цифр числа до единичного разряда. Введите число:")
+
+    println("Вычисление суммы цифр числа до единичного разряда.")
+    println("Введите положительное целое число:")
+    var number = readln().toInt()
+
+    //Функция считает сумму цифр для введённого числа
+    fun countSum(number: Int): Int {
+        var sum = 0
+        var bufNumber = number
+        println()
+        print("Сумма цифр числа $number =")
+        var digit = 0
+        var i = 1 //Итератор для количество цифр, чтобы для первой не печатался плюс
+        while (bufNumber > 0) {
+            digit = bufNumber % 10
+
+            if (i == 1) {
+                print(" $digit ")
+            } else print("+ $digit ")
+
+            sum += digit
+            bufNumber /= 10
+            i++
+        }
+        print(" = $sum")
+        return sum
+    }
+
+
+    while (number / 10 > 0) {
+        number = countSum(number)
+    }
+
 }
+
 
 //Задача 4: Перевёрнутая лесенка.
 fun invertedLadder() {
-    println("Перевёрнутая лесенка. Введите высоту лесенки:")
+    println("Перевёрнутая лесенка.")
+    println("Введите высоту лесенки:")
+    val number = readln().toInt()
+
+    for(i in number downTo 1){
+        for (j in 1..i){
+            print("#")
+        }
+        println()
+    }
 }
