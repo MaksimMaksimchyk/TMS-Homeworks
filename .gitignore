@@ -2,8 +2,6 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.idea
-/TMS-Homeworks.iml
 
 ### Kotlin ###
 .kotlin
