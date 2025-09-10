@@ -18,6 +18,7 @@ fun main() {
 }
 
 
+//Перестановка слов в обратном порядке
 fun reverseWordsInString() {
 
     println("\nИзначальная строка: ")
@@ -30,6 +31,7 @@ fun reverseWordsInString() {
 }
 
 
+//Преобразование строки в ASCII-коды и обратно
 fun stringToCodes() {
 
     println("\nИзначальная строка: ")
