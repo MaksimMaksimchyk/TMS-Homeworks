@@ -10,7 +10,7 @@ fun main() {
         println("2 -> Частотная сортировка (сортирует массив по частоте появления элементов)")
         println("3 -> Минимальное количество перестановок для сортировки")
         println("Любая другая клавиша -> Выход")
-        inputMenu = readLine()?.toIntOrNull()
+        inputMenu = readlnOrNull()?.toIntOrNull()
         when (inputMenu) {
             1 -> sortNegative()
             2 -> sortFrequncy()

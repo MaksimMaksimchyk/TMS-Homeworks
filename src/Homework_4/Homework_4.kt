@@ -11,7 +11,7 @@ fun main() {
         println("3 -> Реверс массива")
         println("4 -> Проверка массива на палиндром")
         println("Любая другая клавиша -> Выход")
-        inputMenu = readLine()?.toIntOrNull()
+        inputMenu = readlnOrNull()?.toIntOrNull()
         when (inputMenu) {
             1 -> maxAndMinElement()
             2 -> countOddAndEven()

@@ -7,7 +7,7 @@ fun main() {
         println("1 -> Перестановка слов в обратном порядке")
         println("2 -> Преобразование строки в ASCII-коды и обратно")
         println("Любая другая клавиша -> Выход")
-        inputMenu = readLine()?.toIntOrNull()
+        inputMenu = readlnOrNull()?.toIntOrNull()
         when (inputMenu) {
             1 -> reverseWordsInString()
             2 -> stringToCodes()
