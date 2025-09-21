@@ -14,5 +14,13 @@ package Homework_8
  */
 
 fun main() {
+    val listOfProdcts = listOf<Product>(
+        Electronics("Apple 17 Pro", 700.0),
+        Electronics("Smart TV", 500.0),
+        Clothing("Куртка", 25.0),
+        Food("Хлеб", 5.0),
+    )
+
+    listOfProdcts.forEach {it.getFinalPrice()}
 
 }
