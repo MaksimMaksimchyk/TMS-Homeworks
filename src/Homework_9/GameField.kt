@@ -45,7 +45,7 @@ object GameField {
 
 
     fun congratsWinner(winner: Player) {
-        println("${winner.name} победил! Ура!")
+        println("${winner.name} победил(-а)! Ура!")
     }
 
 
