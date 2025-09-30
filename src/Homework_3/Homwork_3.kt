@@ -11,7 +11,7 @@ fun main() {
         println("3 -> Вычисление суммы цифр числа до единичного разряда.")
         println("4 -> Перевёрнутая лесенка")
         println("Любая другая клавиша -> Выход")
-        inputMenu = readLine()?.toIntOrNull()
+        inputMenu = readlnOrNull()?.toIntOrNull()
         when (inputMenu) {
             1 -> palindrome()
             2 -> primeNumber()
