@@ -15,6 +15,8 @@ fun main(args: Array<String>) {
     for (word in list) {
         val sortedWord = word.toCharArray().sorted().joinToString("")
         mutableMap.getOrPut(sortedWord) { mutableListOf() }.add(word)
+
+
     }
 
     var iterator = 1
